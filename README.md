@@ -20,7 +20,7 @@ Web-app for reservation tickets, supports registration, authentication and CRUD 
 
 **Technologies:**
 - Java 17
-- Tomcat 9.0.50
+- Tomcat 10.0.27
 - Spring 6 (MVC, Security)
 - Hibernate 6
 - EHCache 3
