@@ -2,6 +2,7 @@
 #### `A simple simulator of cinema service`
 
 **Description**
+
 Web-app of cinema service for reservation tickets, that support registration, authentication and CRUD operations.
 
 **Project structure:**
