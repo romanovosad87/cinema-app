@@ -34,7 +34,7 @@ Web-app of cinema service for reservation tickets, that support registration, au
 3. Configure db.properties file with your URL, USERNAME, PASSWORD, DRIVER.
 4. Configure log4j2.properties file with your basePath to this project.
 5. Configure liquibase.properties file with your URL, USERNAME, PASSWORD, DRIVER.
-6. Configure create-all-tables.sql file with your name.
+6. Configure create-all-tables.sql file with your NAME.
 7. Run command mvn clean package in terminal.
 
 **You can test the app by this** 
