@@ -3,7 +3,7 @@
 
 **Description**
 
-Web-app for reservation tickets, that support registration, authentication and CRUD operations.
+Web-app for reservation tickets, supports registration, authentication and CRUD operations.
 
 **Project structure:**
 1. DAO - CRUD operations.
