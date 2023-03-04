@@ -32,7 +32,7 @@ Web-app for reservation tickets, that support registration, authentication and C
 1. Clone the project to your IDE from GitHub.
 2. Configure Tomcat (set "/" in deployment - cinema_app_war_exploded).
 3. Configure **[db.properties](https://github.com/romanovosad87/cinema-app/blob/main/src/main/resources/db.properties)** file with your URL, USERNAME, PASSWORD, DRIVER.
-4. Configure log4j2.properties file with your basePath to this project.
-5. Configure liquibase.properties file with your URL, USERNAME, PASSWORD, DRIVER.
-6. Configure create-all-tables.sql file with your NAME.
+4. Configure **[log4j2.properties](https://github.com/romanovosad87/cinema-app/blob/main/src/main/resources/log4j2.properties)** file with your basePath to this project.
+5. Configure **[liquibase.properties](https://github.com/romanovosad87/cinema-app/blob/main/src/main/resources/liquibase.properties)** file with your URL, USERNAME, PASSWORD, DRIVER.
+6. Configure **[create-all-tables.sql](https://github.com/romanovosad87/cinema-app/blob/main/src/main/resources/db.changelog/changes/create-all-tables.sql)** file with your NAME.
 7. Run command mvn clean package in terminal.
