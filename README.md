@@ -32,7 +32,7 @@ Web-app of cinema service for reservation tickets, that support registration, au
 1. Clone the project to your IDE from GitHub.
 2. Configure Tomcat (set "/" in deployment - cinema_app_war_exploded).
 3. Configure db.properties file with your URL, USERNAME, PASSWORD, DRIVER.
-4. Configure log4j2.properties file with your property.basePath to this project.
+4. Configure log4j2.properties file with your basePath to this project.
 5. Configure liquibase.properties file with your URL, USERNAME, PASSWORD, DRIVER.
 6. Configure create-all-tables.sql file with your name.
 7. Run command mvn clean package in terminal.
