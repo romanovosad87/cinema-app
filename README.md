@@ -36,8 +36,3 @@ Web-app for reservation tickets, that support registration, authentication and C
 5. Configure liquibase.properties file with your URL, USERNAME, PASSWORD, DRIVER.
 6. Configure create-all-tables.sql file with your NAME.
 7. Run command mvn clean package in terminal.
-
-**You can test the app by this** 
-**[link](http://taxiservice-env-1.eba-5fm6pmcm.eu-west-3.elasticbeanstalk.com)**
-
-(used [Amazon Elastic Beanstalk](https://aws.amazon.com/elasticbeanstalk/?nc1=h_ls) and [Amazon RDS](https://aws.amazon.com/rds/?p=ft&c=db&z=3))
