@@ -21,7 +21,7 @@ Web-app for reservation tickets, that support registration, authentication and C
 **Technologies:**
 - Java 17
 - Tomcat 9.0.50
-- Spring 6 (Web, MVC, Security)
+- Spring 6 (MVC, Security)
 - Hibernate 6
 - EHCache 3
 - Liquibase
