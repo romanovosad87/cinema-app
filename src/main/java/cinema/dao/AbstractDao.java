@@ -65,7 +65,7 @@ public abstract class AbstractDao<T> {
         try {
             session = factory.openSession();
             transaction = session.beginTransaction();
-            session.update(t);
+            session.merge(t);
             transaction.commit();
             return t;
         } catch (Exception e) {
