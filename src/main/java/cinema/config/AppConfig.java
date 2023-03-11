@@ -1,12 +1,14 @@
 package cinema.config;
 
+import static org.springframework.context.annotation.FilterType.ANNOTATION;
+
 import java.util.Properties;
 import javax.sql.DataSource;
 import org.apache.commons.dbcp2.BasicDataSource;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.ComponentScan.Filter;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.FilterType;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.core.env.Environment;
 import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
@@ -15,9 +17,9 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Controller;
 
 @Configuration
-@PropertySource("classpath:db.properties")
+@PropertySource("classpath:application.properties")
 @ComponentScan(basePackages = "cinema",
-        excludeFilters = @ComponentScan.Filter(type = FilterType.ANNOTATION,
+        excludeFilters = @Filter(type = ANNOTATION,
                 value = Controller.class))
 public class AppConfig {
     private final Environment environment;
