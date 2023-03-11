@@ -1,6 +1,6 @@
 package cinema.controller;
 
-import cinema.dto.request.UserRequestDto;
+import cinema.dto.request.UserRegisterRequestDto;
 import cinema.model.User;
 import cinema.service.AuthenticationService;
 import cinema.service.UserService;
@@ -40,34 +40,35 @@ public class AuthenticationController {
 
     @GetMapping("/register")
     public String showRegistrationForm(Model model) {
-        UserRequestDto userRequestDto = new UserRequestDto();
-        model.addAttribute("user", userRequestDto);
+        UserRegisterRequestDto userRegisterRequestDto = new UserRegisterRequestDto();
+        model.addAttribute("user", userRegisterRequestDto);
         return "register";
     }
 
     @PostMapping("/register")
-    public String registration(@Valid @ModelAttribute("user") UserRequestDto userRequestDto,
+    public String registration(@Valid @ModelAttribute("user") UserRegisterRequestDto requestDto,
                                BindingResult result,
                                Model model) {
-        Optional<User> userFromDb = userService.findByEmail(userRequestDto.getEmail());
+        Optional<User> userFromDb = userService.findByEmail(requestDto.getEmail());
         if (userFromDb.isPresent()) {
             result.rejectValue("email", null,
                     "There is already an account registered with the same email");
             LOGGER.error("""
                     Can't register, is already an account registered
                     with the same email. Params: email = {}""",
-                    userRequestDto.getEmail());
+                    requestDto.getEmail());
         }
         if (allErrors(result).contains("Passwords do not match!")) {
             result.rejectValue("password", null, "Passwords do not match!");
             result.rejectValue("repeatPassword", null, "Passwords do not match!");
         }
         if (result.hasErrors()) {
-            model.addAttribute("user", userRequestDto);
+            model.addAttribute("user", requestDto);
             return "/register";
         }
-        authService.register(userRequestDto.getEmail(), userRequestDto.getPassword());
-        LOGGER.info("User registered. Params: email = {}", userRequestDto.getEmail());
+        authService.register(requestDto.getEmail(),
+                requestDto.getPassword());
+        LOGGER.info("User registered. Params: email = {}", requestDto.getEmail());
         return "redirect:/register?success";
     }
 

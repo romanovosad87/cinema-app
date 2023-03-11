@@ -20,6 +20,13 @@ public class Role {
     @Column(unique = true)
     private RoleName roleName;
 
+    public Role() {
+    }
+
+    public Role(RoleName roleName) {
+        this.roleName = roleName;
+    }
+
     public Long getId() {
         return id;
     }
