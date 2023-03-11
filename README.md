@@ -27,6 +27,9 @@ Web-app for reservation tickets, supports registration, authentication and CRUD 
 - Liquibase
 - Log4j2
 - Thymeleaf 3
+- JUnit 5
+- Mockito
+- HSQLDB
 
 **How to run application:**
 1. Clone the project to your IDE from GitHub.
