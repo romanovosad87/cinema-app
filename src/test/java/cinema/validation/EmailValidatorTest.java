@@ -31,9 +31,13 @@ class EmailValidatorTest {
     @Test
     @Order(1)
     void isValid_validEmail_ok() {
-        String email = "valid@i.ua";
-        boolean isValid = emailValidator.isValid(email, constraintValidatorContext);
-        assertTrue(isValid);
+        Set<String> validEmails = new HashSet<>();
+        validEmails.add("valid@i.ua");
+        validEmails.add("valid@domain.co.in");
+        validEmails.add("valid.valid@i.ua");
+        validEmails.add("valid_valid@i.ua");
+        validEmails.add("valid@i.corporate.in");
+        validEmails.forEach(this::validEmailHelper);
     }
 
     @Test
@@ -46,7 +50,7 @@ class EmailValidatorTest {
         invalidEmails.add("valid@.ua");
         invalidEmails.add("valid@i_ua");
         invalidEmails.add("valid@i.");
-        invalidEmails.forEach(this::emailValidatorHelper);
+        invalidEmails.forEach(this::invalidEmailHelper);
     }
 
     @Test
@@ -57,7 +61,14 @@ class EmailValidatorTest {
                 "Method should return false for null email '%s'");
     }
 
-    private void emailValidatorHelper(String email) {
+    private void validEmailHelper(String email) {
+        boolean actual = emailValidator.isValid(email, constraintValidatorContext);
+        assertTrue(actual,
+                "Method should return true for email '%s'"
+                        .formatted(email));
+    }
+
+    private void invalidEmailHelper(String email) {
         boolean actual = emailValidator.isValid(email, constraintValidatorContext);
         assertFalse(actual,
                 "Method should return false for email '%s'"
