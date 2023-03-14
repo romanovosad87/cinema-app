@@ -42,6 +42,6 @@ Web-app for reservation tickets, supports registration, authentication and CRUD 
 8. Click debug configuration.
 
 **You can test the app by this** 
-**[link](http://http://cinema-env.eba-cpqze2bi.eu-west-3.elasticbeanstalk.com)**
+**[link](http://cinema-env.eba-cpqze2bi.eu-west-3.elasticbeanstalk.com)**
 
 (used [Amazon Elastic Beanstalk](https://aws.amazon.com/elasticbeanstalk/?nc1=h_ls) and [Amazon RDS](https://aws.amazon.com/rds/?p=ft&c=db&z=3))
