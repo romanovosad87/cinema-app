@@ -39,3 +39,9 @@ Web-app for reservation tickets, supports registration, authentication and CRUD 
 5. Configure **[liquibase.properties](https://github.com/romanovosad87/cinema-app/blob/main/src/main/resources/liquibase.properties)** file with your URL, USERNAME, PASSWORD, DRIVER.
 6. Configure **[create-all-tables.sql](https://github.com/romanovosad87/cinema-app/blob/main/src/main/resources/db.changelog/changes/create-all-tables.sql)** file with your NAME.
 7. Run command mvn clean package in terminal.
+8. Click debug configuration.
+
+**You can test the app by this** 
+**[link](http://http://cinema-env.eba-cpqze2bi.eu-west-3.elasticbeanstalk.com)**
+
+(used [Amazon Elastic Beanstalk](https://aws.amazon.com/elasticbeanstalk/?nc1=h_ls) and [Amazon RDS](https://aws.amazon.com/rds/?p=ft&c=db&z=3))
