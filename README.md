@@ -19,6 +19,7 @@ Web-app for reservation tickets, supports registration, authentication and CRUD 
 - complete an order
 
 **Technologies:**
+
 Java 17, Tomcat 10.0.27, Spring 6 (WEB MVC, Security), Hibernate 6, MySQL, EHCache 3, Liquibase, Log4j2, Thymeleaf 3, JUnit 5, Mockito, HSQLDB
 
 **You can test the app by this** 
