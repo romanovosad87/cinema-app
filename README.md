@@ -43,5 +43,11 @@ Web-app for reservation tickets, supports registration, authentication and CRUD 
 
 **You can test the app by this** 
 **[link](http://cinema-env.eba-cpqze2bi.eu-west-3.elasticbeanstalk.com)**
-
 (used [Amazon Elastic Beanstalk](https://aws.amazon.com/elasticbeanstalk/?nc1=h_ls) and [Amazon RDS](https://aws.amazon.com/rds/?p=ft&c=db&z=3))
+
+To log in as admin use email: admin@i.com, password: admin123. 
+To log in as user use email: user@i.com, password: user5678 or you can create a new user.
+To test this app api you can use postman. Here is **[link](https://www.postman.com/roman8729/workspace/cinema-app/collection/25812862-e7ee070f-125a-4413-85f8-90777ef3cc90?ctx=documentation)**
+to public collection of http requests that you can run.
+
+
