@@ -3,39 +3,39 @@
 
 ## Description
 
-Web-app for reservation tickets, supports registration, authentication and CRUD operations.
+Web-app for tickets reservation, supports registration, authentication, CRUD operations and is based on Hibernate and Spring frameworks.
 
 
 ## Project functionality:
-![image](https://user-images.githubusercontent.com/114337016/225271105-49c8d827-3b42-431b-a136-6454d93c9257.png)
+![image](https://user-images.githubusercontent.com/114337016/225285295-3fa0cea9-ae43-44de-80da-cfc8c1922911.png)
 
 
 ## Project structure:
 
 ***java/***
 
-- ####config#### - config classes required by Spring & Hibernate
-- controller - client-server interaction
-- dao - communication with the database
-- dto - dtos that are used for http requests and responses
-- exception - custom exceptions
-- lib - custom validators for email, password and confirm password
-- model - model classes for entities
-- service - classes that are responsible for business logic
-- service/mapper - mappers that are used to parse dto to entity and vice versa
-- util - util class containing date date-time pattern
+- `config` - config classes required by Spring & Hibernate
+- `controller` - client-server interaction
+- `dao` - communication with the database
+- `dto` - dtos that are used for http requests and responses
+- `exception` - custom exceptions
+- `lib` - custom validators for email, password and confirm password
+- `model` - model classes for entities
+- `service` - classes that are responsible for business logic
+- `service/mapper` - mappers that are used to parse dto to entity and vice versa
+- `util` - util class containing date date-time pattern
 
 ***resources/***
 
-- application.properties - database and Hibernate properties.
-- liquibase.properties - properties for database change managment tool
-- log4j2.properties - properties for logger
-- db.changelog - contains an ordered list of chahges to database that nees to be deployed
-- webapp - contains html views for login, register and index 
+- `application.properties` - database and Hibernate properties.
+- `liquibase.properties` - properties for database change managment tool
+- `log4j2.properties` - properties for logger
+- `db.changelog` - contains an ordered list of chahges to database that nees to be deployed
+- `webapp` - contains html views for login, register and index 
 
 ***other***
 
-- pom.xml - contains maven build configs and dependencies.
+- `pom.xml` - contains maven build configs and dependencies.
 
 
 ## Features:
