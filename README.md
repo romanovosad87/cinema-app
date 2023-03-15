@@ -59,7 +59,7 @@ To log in as admin use email: admin@i.com, password: admin123. To log in as user
 To test this app you can use postman. Here is **[link](https://www.postman.com/roman8729/workspace/cinema-app/collection/25812862-e7ee070f-125a-4413-85f8-90777ef3cc90?ctx=documentation)**
 to public collection of http requests that you can run.
 
-## How to run application:
+## How to run an application:
 1. Clone the project to your IDE from GitHub.
 2. Configure Tomcat 10.хх (set "/" in deployment - cinema_app_war_exploded).
 3. Configure **[db.properties](https://github.com/romanovosad87/cinema-app/blob/main/src/main/resources/db.properties)** file with your URL, USERNAME, PASSWORD, DRIVER.
