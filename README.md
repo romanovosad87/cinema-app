@@ -6,11 +6,11 @@
 Web-app for tickets reservation, supports registration, authentication, CRUD operations and is based on Hibernate and Spring frameworks.
 
 
-## Functionality:
+## Functionality
 ![82](https://user-images.githubusercontent.com/114337016/225303225-29f59f96-f756-4d19-b7ee-1e28df2c3db2.png)
 
 
-## Structure:
+## Structure
 
 ***java/***
 
@@ -38,7 +38,7 @@ Web-app for tickets reservation, supports registration, authentication, CRUD ope
 - `pom.xml` - contains maven build configs and dependencies
 
 
-## Features:
+## Features
 - register and login as a user
 - create and find movies
 - create and find cinema-halls
@@ -46,7 +46,7 @@ Web-app for tickets reservation, supports registration, authentication, CRUD ope
 - add tickets to shopping cart
 - complete an order
 
-## Technologies:
+## Technologies
 
 Java 17, Tomcat 10.0.27, Spring 6 WEB MVC, Spring 6 Security, Hibernate 6, MySQL, EHCache 3, Liquibase, Log4j2, Thymeleaf 3, JUnit 5, Mockito, HSQLDB.
 
@@ -59,7 +59,7 @@ To log in as admin use email: admin@i.com, password: admin123. To log in as user
 To test this app you can use postman. Here is **[link](https://www.postman.com/roman8729/workspace/cinema-app/collection/25812862-e7ee070f-125a-4413-85f8-90777ef3cc90?ctx=documentation)**
 to public collection of http requests that you can run.
 
-## How to run an application:
+## How to run an application
 1. Clone the project to your IDE from GitHub.
 2. Configure Tomcat 10.хх (set "/" in deployment - cinema_app_war_exploded).
 3. Configure **[db.properties](https://github.com/romanovosad87/cinema-app/blob/main/src/main/resources/db.properties)** file with your URL, USERNAME, PASSWORD, DRIVER.
