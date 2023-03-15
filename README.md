@@ -7,7 +7,7 @@ Web-app for tickets reservation, supports registration, authentication, CRUD ope
 
 
 ## Project functionality:
-![image](https://user-images.githubusercontent.com/114337016/225285295-3fa0cea9-ae43-44de-80da-cfc8c1922911.png)
+![82](https://user-images.githubusercontent.com/114337016/225303225-29f59f96-f756-4d19-b7ee-1e28df2c3db2.png)
 
 
 ## Project structure:
