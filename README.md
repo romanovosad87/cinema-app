@@ -6,11 +6,11 @@
 Web-app for tickets reservation, supports registration, authentication, CRUD operations and is based on Hibernate and Spring frameworks.
 
 
-## Project functionality:
+## Functionality:
 ![82](https://user-images.githubusercontent.com/114337016/225303225-29f59f96-f756-4d19-b7ee-1e28df2c3db2.png)
 
 
-## Project structure:
+## Structure:
 
 ***java/***
 
