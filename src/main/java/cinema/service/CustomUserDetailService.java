@@ -1,7 +1,6 @@
-package cinema.security;
+package cinema.service;
 
 import cinema.model.User;
-import cinema.service.UserService;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.security.core.userdetails.UserDetails;

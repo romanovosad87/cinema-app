@@ -9,6 +9,7 @@ import static org.mockito.Mockito.when;
 
 import cinema.model.Role;
 import cinema.model.User;
+import cinema.service.CustomUserDetailService;
 import cinema.service.UserService;
 import java.util.Optional;
 import java.util.Set;
