@@ -33,6 +33,10 @@ Web-app for tickets reservation, supports registration, authentication, CRUD ope
 - `db.changelog` - contains an ordered list of chahges to database that needs to be deployed
 - `webapp` - contains html views for login, register and index 
 
+***test/***
+
+- tests for some classes
+
 ***other***
 
 - `pom.xml` - contains maven build configs and dependencies
